@@ -32,10 +32,10 @@ body {
 }
 
 .title-header {
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #377fba;
-    margin:0;
+    margin: 0;
 }
 
 .body-header {
@@ -47,8 +47,14 @@ body {
 .img {
     width: 46%;
 }
-.img img{
+
+.img img {
     width: 100%;
+}
+
+.img-avatar img {
+    border-radius: 20rem 0 20rem 0;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, .4);
 }
 
 .body {
@@ -58,10 +64,11 @@ body {
 
 
 .title {
-    font-size:3rem;
+    font-size: 3rem;
     font-weight: 500;
 }
-.title::after{
+
+.title::after {
     content: " ";
     width: 160px;
     height: 2px;
@@ -80,7 +87,7 @@ body {
     width: 1px;
     height: 100%;
     background-color: #ccc;
-    margin:0 2rem;
+    margin: 0 2rem;
 }
 
 
@@ -99,7 +106,7 @@ header {
     z-index: 9999;
 }
 
-.logo a{
+.logo a {
     font-size: 4rem;
     font-weight: 900;
     color: var(--primary-color);
@@ -110,7 +117,7 @@ header nav {
     display: flex;
 }
 
-header nav div a{
+header nav div a {
     padding: 0 30px;
     font-size: 2rem;
     font-weight: 700;
@@ -139,7 +146,7 @@ header #btn-top {
 @keyframes fade {
     from {
         opacity: 0;
-        transform:translateY(120px);
+        transform: translateY(120px);
     }
 }
 
@@ -154,7 +161,7 @@ header #btn-top div {
     margin-top: 1rem;
 }
 
-header #btn-top div i{
+header #btn-top div i {
     font-size: 3rem;
     color: #fff;
 }
@@ -177,16 +184,16 @@ main .hello-introduced {
     margin-right: 4rem;
 }
 
-main .hello-introduced-greet{
+main .hello-introduced-greet {
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
-    color:rgb(6, 80, 154)
+    color: rgb(6, 80, 154)
 }
 
 main .hello-introduced h1 {
     font-size: 6rem;
-    margin:2rem 0;
+    margin: 2rem 0;
 }
 
 main .hello-introduced .school {
@@ -200,8 +207,8 @@ main .hello-introduced .school-text {
     margin: 0;
 }
 
-main .hello-introduced .school-bg-text{
-    font-size:5rem;
+main .hello-introduced .school-bg-text {
+    font-size: 5rem;
     margin: 0;
     background-color: var(--primary-color);
     font-weight: 700;
@@ -213,7 +220,7 @@ main .hello-introduced .school-bg-text{
 main .hello-introduced button {
     border: none;
     font-size: 2rem;
-    padding:1.4rem 3rem;
+    padding: 1.4rem 3rem;
     border-radius: 30px;
     font-weight: 700;
     color: #fff;
@@ -231,8 +238,8 @@ main .hello-social-logo {
     margin-left: 4rem;
 }
 
-main .hello-social-logo i{
-    font-size:4rem;
+main .hello-social-logo i {
+    font-size: 4rem;
     opacity: .8;
     margin: 2rem 0;
 }
@@ -246,7 +253,7 @@ main .hello-social-logo .bxl-github:hover {
 }
 
 main .about {
-    padding:10rem 0;
+    padding: 10rem 0;
 }
 
 main .about-header {
@@ -262,9 +269,9 @@ main .skill-header {
 }
 
 main .header-title,
-main .header-body{
+main .header-body {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 main .skill-list {
@@ -280,7 +287,7 @@ main .skill-list-item {
     background-color: #fff;
     padding: 3rem;
     margin-bottom: 8rem;
-    border-radius: 2rem;
+    border-radius: 1.6rem;
     box-shadow: 1px 5px 15px rgba(0, 0, 0, .2);
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -299,7 +306,7 @@ main .skill-list-item img {
 }
 
 main .skill-list-item:hover img {
-    padding:0;
+    padding: 0;
 }
 
 main .skill-title {
@@ -356,20 +363,20 @@ main .project-list-item-1>div {
 }
 
 main .project-list-item-1 .item-title {
-    font-size:2.4rem;
+    font-size: 2.4rem;
     margin: 2rem 0;
     font-weight: 700;
     color: #276ea9;
 }
 
 main .project-list-item-1 div>.text {
-    height:7rem;
+    height: 7rem;
 }
 
-main .project-list-item-1>div a{
+main .project-list-item-1>div a {
     margin-top: 2rem;
     font-size: 2rem;
-    color:#276ea9;
+    color: #276ea9;
 }
 
 main .project-list-item-1>div a:hover {
@@ -411,7 +418,7 @@ footer .footer-social-logo {
     margin: .8rem 0 8rem;
 }
 
-footer .footer-social-logo i{
+footer .footer-social-logo i {
     font-size: 3rem;
 }
 
@@ -419,11 +426,11 @@ footer .logo .copyright {
     font-size: 1.6rem;
 }
 
-footer .footer-social-logo a+a{
+footer .footer-social-logo a+a {
     margin: 2rem;
 }
 
-footer .contact>div+div{
+footer .contact>div+div {
     margin: 3rem 0;
 }
 
@@ -437,6 +444,7 @@ footer .footer-body {
     font-size: 1.4rem;
     margin: 0.4rem 0;
 }
+
 footer .email-submit {
     display: flex;
     margin-top: 2rem;
@@ -445,7 +453,7 @@ footer .email-submit {
 
 footer .email-submit input {
     width: 24rem;
-    height:100%;
+    height: 100%;
     padding: 2rem;
     font-size: 1.2rem;
     border: 1px solid var(--primary-color);
@@ -453,7 +461,7 @@ footer .email-submit input {
     transition: all 0.4s ease;
 }
 
-footer .email-submit input:focus{
+footer .email-submit input:focus {
     outline: none;
     box-shadow: 1px 5px 15px rgba(0, 0, 0, .1);
 }
@@ -463,10 +471,8 @@ footer .email-submit button {
     border-radius: 0 30px 30px 0;
     background-color: var(--primary-color);
     border: none;
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #fff;
     cursor: pointer;
 }
-
-
