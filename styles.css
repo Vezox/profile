@@ -53,7 +53,10 @@ body {
 }
 
 .img-avatar img {
-    border-radius: 20rem 0 20rem 0;
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    border-radius: 16rem 0 16rem 0;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, .4);
 }
 
