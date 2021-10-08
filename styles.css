@@ -26,9 +26,12 @@ body {
 }
 
 .container {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     display: flex;
     justify-content: space-between;
+    max-width: 120rem;
+    padding: 0 4rem;
+    height: 44rem;
 }
 
 .title-header {
@@ -101,7 +104,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 4rem;
     height: 12vh;
     width: 100vw;
     background-color: #fff;
@@ -170,21 +173,21 @@ header #btn-top div i {
 }
 
 
-main {
-    margin: 0 12%;
-}
+
 
 main .hello {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 12vh;
+    margin: 12vh auto 0;
     height: 88vh;
+    max-width: 120rem;
+    padding: 0 4rem;
 }
 
 
 main .hello-introduced {
-    margin-right: 4rem;
+    max-width: 100rem;
 }
 
 main .hello-introduced-greet {
@@ -238,7 +241,7 @@ main .hello-introduced button:hover {
 
 main .hello-social-logo {
     width: 4rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 main .hello-social-logo i {
@@ -260,11 +263,15 @@ main .about {
 }
 
 main .about-header {
-    margin-bottom: 8rem;
+    margin:0 auto 8rem;
+    max-width: 120rem;
+    padding: 0 4rem;
 }
 
 main .skill {
-    padding: 10rem 0;
+    padding: 10rem 4rem;
+    margin: 0 auto;
+    max-width: 120rem;
 }
 
 main .skill-header {
@@ -281,6 +288,7 @@ main .skill-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 main .skill-list-item {
@@ -322,13 +330,15 @@ main .skill-title {
 }
 
 main .project {
-    padding: 10rem 0;
+    padding: 10rem 4rem 0;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 main .project-list-item {
     display: flex;
     width: 100%;
-    height: 26rem;
+    min-height: 26rem;
     margin: 8rem 0;
     padding: 3rem;
     border-radius: 2rem;
@@ -357,7 +367,7 @@ main .project-list-item-1 {
 main .project-list-item img {
     transition: all 0.4s ease-in-out;
     position: relative;
-    height: 100%;
+    height: 20rem;
     border-radius: 4rem;
 }
 
@@ -373,7 +383,7 @@ main .project-list-item-1 .item-title {
 }
 
 main .project-list-item-1 div>.text {
-    height: 7rem;
+    min-height: 7rem;
 }
 
 main .project-list-item-1>div a {
