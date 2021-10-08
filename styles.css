@@ -30,8 +30,8 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 120rem;
-    padding: 0 4rem;
     height: 44rem;
+    padding: 0 4rem;
 }
 
 .title-header {
@@ -259,17 +259,18 @@ main .hello-social-logo .bxl-github:hover {
 }
 
 main .about {
-    padding: 10rem 0;
+    padding: 13vh 4rem;
+    overflow: hidden;
 }
 
 main .about-header {
     margin:0 auto 8rem;
-    max-width: 120rem;
     padding: 0 4rem;
+    max-width: 120rem;
 }
 
 main .skill {
-    padding: 10rem 4rem;
+    padding: 13vh 4rem;
     margin: 0 auto;
     max-width: 120rem;
 }
@@ -330,7 +331,7 @@ main .skill-title {
 }
 
 main .project {
-    padding: 10rem 4rem 0;
+    padding: 13vh 4rem 0;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -413,14 +414,16 @@ main .project-list-item-2>ul>li {
 
 footer {
     width: 100%;
-    height: 28rem;
-    padding: 4rem 12%;
+    /* height: 32rem; */
     background-color: rgb(241, 241, 241);
 }
 
 footer .content {
     display: flex;
     justify-content: space-between;
+    margin: 4rem auto 0;
+    max-width: 120rem;
+    padding: 4rem;
 }
 
 footer .content>div {
@@ -488,4 +491,52 @@ footer .email-submit button {
     font-weight: 700;
     color: #fff;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 46.1875em){
+    *{
+        font-size: 5px;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    main .hello-introduced .school {
+        display: block;
+    }
+
+    .school-bg-text {
+        width: 40%;
+    }
+
+    .hello-social-logo{
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    *{
+        font-size: 8px;
+    }
+
+    main .skill-list {
+        justify-content: space-around;
+    }
+
+    .img-avatar img {
+        border-radius: 12rem 0 12rem 0;
+    }
+
+    #btn-top {
+        display: none !important;
+    }
+
+    .container {
+        height: 36rem;
+    }
+    
 }
