@@ -57,14 +57,15 @@ body {
 .img img {
     width: 100%;
 }
-.img.img-avatar{
+
+.img.img-avatar {
     width: 42%;
 }
 
 .img-avatar img {
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     border-radius: 16rem 0 16rem 0;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, .4);
 }
@@ -269,7 +270,7 @@ main .about {
 }
 
 main .about-header {
-    margin:0 auto 8rem;
+    margin: 0 auto 8rem;
     max-width: 120rem;
 }
 
@@ -498,23 +499,23 @@ footer .email-submit button {
 }
 
 
-header .btn-toggle{
+header .btn-toggle {
     display: none;
     z-index: 99999999;
 }
 
-header .btn-toggle>i{
+header .btn-toggle>i {
     font-size: 6rem;
 }
 
-header .btn-toggle>i:hover{
-    background-color:var(--primary-color);
+header .btn-toggle>i:hover {
+    background-color: var(--primary-color);
 }
 
 
 
-@media only screen and (max-width: 46.1999em){
-    *{
+@media only screen and (max-width: 46.1999em) {
+    * {
         font-size: 6px;
     }
 
@@ -539,16 +540,16 @@ header .btn-toggle>i:hover{
         opacity: 1
     }
 
-    
-    header>nav>div{
+
+    header>nav>div {
         padding: 6rem;
     }
 
-    header>nav>div>a{
+    header>nav>div>a {
         font-size: 4rem;
     }
 
-    header .btn-toggle{
+    header .btn-toggle {
         display: block;
     }
 
@@ -567,15 +568,15 @@ header .btn-toggle>i:hover{
     main .hello-introduced .school-text {
         font-size: 4rem;
     }
-    
+
     main .hello-introduced .school-bg-text {
         width: 40%;
         font-size: 4rem;
         border-radius: 0 6rem 0 3rem;
     }
-    
 
-    .hello-social-logo{
+
+    .hello-social-logo {
         display: none;
     }
 
@@ -638,7 +639,12 @@ header .btn-toggle>i:hover{
     }
 
     footer .email-submit input {
-        width: 9rem;
+        width: 12rem;
+    }
+
+    footer .email-submit button {
+        width: 6rem;
+        font-size: 1.4rem;
     }
 
     #btn-top {
@@ -652,10 +658,29 @@ header .btn-toggle>i:hover{
     main .hello-introduced button {
         font-size: 2.4rem;
     }
+
+
+    main .project-list-item-1 .item-title {
+        font-size: 3rem;
+    }
+
+
+    main .project-list-item-1>div a {
+        font-size: 2.6rem;
+    }
+
+
+    main .project-list-item-2>ul>div {
+        font-size: 2.6rem;
+    }
+
+    main .project-list-item-2>ul>li {
+        font-size: 2.6rem;
+    }
 }
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-    *{
+    * {
         font-size: 8px;
     }
 
@@ -670,5 +695,5 @@ header .btn-toggle>i:hover{
     #btn-top {
         display: none !important;
     }
-    
+
 }
