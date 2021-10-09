@@ -17,12 +17,13 @@
         <div class="logo">
             <a href="#">THANG</a>
         </div>
-        <nav>
-            <div><a href="#about">Giới thiệu</a></div>
-            <div><a href="#skill">Kỹ năng</a></div>
-            <div><a href="#project">Dự án</a></div>
-            <div><a href="#footer">Liên hệ</a></div>
+        <nav class="nav-toggle">
+            <div class="nav-btn"><a href="#about">Giới thiệu</a></div>
+            <div class="nav-btn"><a href="#skill">Kỹ năng</a></div>
+            <div class="nav-btn"><a href="#project">Dự án</a></div>
+            <div class="nav-btn"><a href="#footer">Liên hệ</a></div>
         </nav>
+        <div class="btn-toggle"><i class='bx bx-menu btn-icon'></i></div>
         <a href="#" id="btn-top" class="hide">
             <div>
                 <i class='bx bx-arrow-to-top'></i>
@@ -63,7 +64,7 @@
                 <p class="body-header">Một số thông tin về bản thân</p>
             </div>
 
-            <div class="container" data-aos="fade-left" data-aos-delay="300">
+            <div class="container" data-aos="fade-left">
                 <div class="img img-avatar">
                     <img src="./img/avatar1.jpg" alt="">
                 </div>
@@ -79,7 +80,10 @@
                     </p>
                 </div>
             </div>
-            <div class="container" data-aos="fade-right">
+            <div class="container reverse" data-aos="fade-right">
+                <div class="img">
+                    <img src="./img/feeling.png" alt="">
+                </div>
                 <div class="body">
                     <div class="title">
                         Sở thích !
@@ -89,9 +93,6 @@
                         Tuy nhiên mọi thứ đã thay đổi khi mình biết lập trình, nó đã trở thành đam mê của bản thân. Mình
                         có thể dành 8-12 giờ mỗi ngày chỉ để ngồi code
                     </p>
-                </div>
-                <div class="img">
-                    <img src="./img/feeling.png" alt="">
                 </div>
             </div>
             <div class="container" data-aos="fade-left">
@@ -137,7 +138,7 @@
                     </div>
                 </div>
 
-                <div data-aos="slide-up" data-aos-delay="300">
+                <div data-aos="slide-up">
                     <div class="skill-list-item">
                         <img src="./img/css.png" alt="">
                         <p class="skill-title">CSS</p>
@@ -146,7 +147,7 @@
                     </div>
                 </div>
 
-                <div data-aos="slide-up" data-aos-delay="400">
+                <div data-aos="slide-up">
                     <div class="skill-list-item">
                         <img src="./img/javascript.png" alt="">
                         <p class="skill-title">JavaScript</p>
@@ -165,7 +166,7 @@
                     </div>
                 </div>
 
-                <div data-aos="slide-up" data-aos-delay="300">
+                <div data-aos="slide-up">
                     <div class="skill-list-item">
                         <img src="./img/expressjs.png" alt="">
                         <p class="skill-title">ExpressJS</p>
@@ -175,7 +176,7 @@
                     </div>
                 </div>
 
-                <div data-aos="slide-up" data-aos-delay="400">
+                <div data-aos="slide-up">
                     <div class="skill-list-item">
                         <img src="./img/mongodb.png" alt="">
                         <p class="skill-title">MongoDB</p>
@@ -196,12 +197,12 @@
                     Dự án
                 </div>
                 <div class="header-body body-header">
-                    Các sản phẩm, dự án mình đã làm
+                    Các dự án mình đã làm
                 </div>
             </div>
 
             <div class="project-list">
-                <div data-aos="fade-down" data-aos-delay="300">
+                <div data-aos="fade-down">
                     <div class="project-list-item">
                         <div class="project-list-item-1">
                             <img src="./img/app.png" alt="">
@@ -231,7 +232,7 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-down" data-aos-delay="500">
+                <div data-aos="fade-down">
                     <div class="project-list-item">
                         <div class="project-list-item-1">
                             <img src="./img/coding.png" alt="">
@@ -321,6 +322,23 @@
         duration: 1000,
         easing: 'ease',
         disableMutationObserver: false,
+    });
+
+    const btnIcon = document.querySelector('.btn-icon')
+
+    document.querySelector('.btn-toggle').onclick = e => {
+        document.querySelector('.nav-toggle').classList.toggle('active');
+        btnIcon.classList.toggle('bx-menu');
+        btnIcon.classList.toggle('bx-x');
+    }
+
+    const btnsNav = document.querySelectorAll('.nav-btn')
+    btnsNav.forEach(e => {
+        e.onclick = e => {
+            document.querySelector('.nav-toggle').classList.remove('active');
+            btnIcon.classList.toggle('bx-menu');
+            btnIcon.classList.toggle('bx-x');
+        }
     });
 
     window.addEventListener('scroll', () => {

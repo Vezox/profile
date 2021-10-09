@@ -7,7 +7,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.9);
     font-size: 10px;
     scroll-behavior: smooth;
 }
@@ -26,12 +26,15 @@ body {
 }
 
 .container {
-    margin: 2rem auto 0;
+    margin: 4rem auto 0;
     display: flex;
     justify-content: space-between;
     max-width: 120rem;
-    height: 44rem;
-    padding: 0 4rem;
+    min-height: 36em;
+}
+
+.container.reverse {
+    flex-direction: row-reverse;
 }
 
 .title-header {
@@ -54,9 +57,12 @@ body {
 .img img {
     width: 100%;
 }
+.img.img-avatar{
+    width: 42%;
+}
 
 .img-avatar img {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content:center;
     border-radius: 16rem 0 16rem 0;
@@ -65,7 +71,6 @@ body {
 
 .body {
     width: 46%;
-    padding-top: 4rem;
 }
 
 
@@ -265,7 +270,6 @@ main .about {
 
 main .about-header {
     margin:0 auto 8rem;
-    padding: 0 4rem;
     max-width: 120rem;
 }
 
@@ -494,28 +498,160 @@ footer .email-submit button {
 }
 
 
-@media only screen and (max-width: 46.1875em){
+header .btn-toggle{
+    display: none;
+    z-index: 99999999;
+}
+
+header .btn-toggle>i{
+    font-size: 6rem;
+}
+
+header .btn-toggle>i:hover{
+    background-color:var(--primary-color);
+}
+
+
+
+@media only screen and (max-width: 46.1999em){
     *{
-        font-size: 5px;
+        font-size: 6px;
     }
 
-    header>nav {
-        display: none;
+    header .nav-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+        transition: all .6s ease-in-out;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    header .nav-toggle.active {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    
+    header>nav>div{
+        padding: 6rem;
+    }
+
+    header>nav>div>a{
+        font-size: 4rem;
+    }
+
+    header .btn-toggle{
+        display: block;
+    }
+
+    main .hello-introduced-greet {
+        font-size: 2.4rem;
     }
 
     main .hello-introduced .school {
         display: block;
     }
 
-    .school-bg-text {
-        width: 40%;
+    main .hello-introduced h1 {
+        font-size: 5rem;
     }
+
+    main .hello-introduced .school-text {
+        font-size: 4rem;
+    }
+    
+    main .hello-introduced .school-bg-text {
+        width: 40%;
+        font-size: 4rem;
+        border-radius: 0 6rem 0 3rem;
+    }
+    
 
     .hello-social-logo{
         display: none;
     }
 
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .body {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .title-header {
+        font-size: 2.4rem;
+    }
+
+    .body-header {
+        font-size: 3.6rem;
+    }
+
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .img.img-avatar {
+        width: 80%;
+    }
+
+    main .skill-list {
+        justify-content: center;
+    }
+
+    main .skill-list-item {
+        width: 50rem;
+        height: 72rem;
+        padding: 4rem;
+        border-radius: 2rem;
+        margin: 0 4rem 8rem;
+    }
+
+    main .skill-title {
+        font-size: 3.8rem;
+    }
+
+    main .project-list-item {
+        flex-direction: column;
+    }
+
+    main .project-list-item-1 {
+        width: 100%;
+    }
+
+    main .project-list-item-2 {
+        width: 100%;
+    }
+
+    footer .email-submit input {
+        width: 9rem;
+    }
+
+    #btn-top {
+        display: none !important;
+    }
+
+    .text {
+        font-size: 2.6rem;
+    }
+
+    main .hello-introduced button {
+        font-size: 2.4rem;
+    }
 }
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
@@ -533,10 +669,6 @@ footer .email-submit button {
 
     #btn-top {
         display: none !important;
-    }
-
-    .container {
-        height: 36rem;
     }
     
 }
