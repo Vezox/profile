@@ -537,7 +537,7 @@ header .btn-toggle>i:hover {
 
     header .nav-toggle.active {
         transform: translateY(0);
-        opacity: 1
+        opacity: 1;
     }
 
 
