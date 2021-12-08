@@ -367,7 +367,7 @@ main .project-list-item:hover img {
 
 main .project-list-item-1 {
     display: flex;
-    width: 50%;
+    width: 48%;
 }
 
 main .project-list-item img {
@@ -403,7 +403,7 @@ main .project-list-item-1>div a:hover {
 }
 
 main .project-list-item-2 {
-    width: 50%;
+    width: 52%;
 }
 
 main .project-list-item-2>ul>div {
